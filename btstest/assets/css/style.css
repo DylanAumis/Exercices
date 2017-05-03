@@ -1,0 +1,39 @@
+.red{
+    height: 300px;    
+    background: orange;
+
+}
+
+
+.position{
+    margin: 450px 300px 0px;
+}
+
+header{
+    background: #d9d9d9
+
+}
+.navbar-default{
+    background: #d9d9d9;
+    border-color: #d9d9d9;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: red;
+}
+
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: red;
+    background-color: #d9d9d9;
+}
+
+#c1 {
+    background-color: rgb(35, 221, 255);
+}
+#c2 {
+    background-color: rgb(225, 230, 230);
+}
+#c3 {
+    background-color: rgb(255, 0, 10);
+}

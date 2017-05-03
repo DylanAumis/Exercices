@@ -1,0 +1,11 @@
+.slider{
+    width: 1000px;
+    overflow: hidden;
+    margin:  150px auto;
+}
+.slides{ 
+width: calc (1200px * 3); 
+}
+.slide{
+    float: left;
+}

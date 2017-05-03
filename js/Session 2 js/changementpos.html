@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bougez!</title>
+        <script src="utility.js"></script>
+        <script>
+            var  changecolor = function changecolor(block){
+
+                log(block)
+                log(block.id)
+                log(block.className)
+                log(block.style)
+                log(block.style.background)
+                log(block.className.split(''))
+
+                block.className ="block green"
+                
+                
+                
+
+
+
+            };
+
+        </script>
+        <style>
+            .blocks{
+                display: flex;
+            }
+            .block {
+                cursor: pointer;
+                display: flex;
+                color: white;
+                justify-content: center;
+                align-items: center;
+                height: 64px;
+                width: 64px;
+            }
+            .block.red{background: red;}
+            .block.green{
+                background: green;
+            }
+        </style>
+    </head>
+    <body class="blocks">
+        <div id="block_red" class="block red" onclick="changecolor(this)"
+             >a</div>
+        <div id="block_green" class="block green" onclick="changecolor(this)">b</div>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>burger is good</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="../Utility/utility.js"></script>
+        <script src="https://use.fontawesome.com/2d672d9c4e.js"></script>
+    </head>
+
+    <body id="debut">
+        <script>
+            var toto = (function toto(){
+                "use strict";
+                var burger, handler, navMobile;
+                window.onload = function(){
+                    navMobile = select(".nav-mobile");
+                    burger = select(".grid-header > .icon");
+                    burger.onclick = handler;
+                };
+                handler = function handler(evt){
+                    log(evt);
+                    navMobile.classList.toggle("is-active");
+                };
+            }());
+        </script>
+        <header class="grid-header">
+            <i class="icon fa fa-bars" ></i>
+            <nav class="nav-main">
+                <ul class="list">
+                    <li class="item">home</li>
+                    <li class="item">about</li>
+                    <li class="item">contact</li>
+                </ul>
+            </nav>
+        </header>
+        <nav class="nav-mobile">
+            <ul class="list">
+                <li class="item">home</li>
+                <li class="item">about</li>
+                <li class="item">contact</li>
+            </ul>
+        </nav>
+    </body>
+
+</html>

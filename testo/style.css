@@ -1,0 +1,263 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #F5F5F5;
+}
+.wrap
+{
+    background: #FFF;
+    box-shadow: 0 0 10px rgba(0,0,0,.05);
+    max-width: 1600px;
+    margin: auto;
+}
+
+.navbar-default{
+    background: #FFF;
+    border-color: #FFF;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color:#3e3c3c;
+    font-size: 15px;
+
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color:lightblue;
+}
+
+a, body
+{
+    color: #505050;
+}
+
+
+a {
+    list-style: none;
+}
+
+img.logo {
+    width: 160px;
+    float: left;
+}
+
+header {
+    border-bottom: 1px solid #FFF;
+}
+
+.top {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.manav {
+    position: relative;
+    text-align: right;
+}
+
+.manav ul li {
+    list-style: none;
+    display: inline-block;
+    border-right: solid 1px #EEE;
+    text-align: center;
+}
+
+.manav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.secone {
+    text-align: center;
+    position: absolute;
+    top: 150px;
+    left: 0px;
+}
+
+.secone h1 {
+    color: dodgerblue;
+    font-size: 45px;
+}
+
+.secone p {
+    font-size: 25px;
+}
+
+.secone h1 span.vert {
+    color: #9c3;
+}
+
+.compa {
+    position: absolute;
+    top: 480px;
+    left: 50% ;
+    margin: auto;
+    background: rgba(33, 33, 33, 0.4);
+    height: 100px;
+    width: 300px;
+}
+
+.select {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+
+.button {
+    position: absolute;
+    top: 40px;
+    left: 180px;
+}
+
+.taff {
+    background: #39c;
+    width: 1600px;
+    height: 800px;
+}
+
+.taff p {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+.ico {
+    position: relative;
+    top: 0px;
+    left: 250px;
+    width: 500px;
+    height: 200px;
+}
+
+.ico2 {
+    position: absolute;
+    top: 880px;
+    left: 1130px;
+    width: 1300px;
+    height: 600px;
+}
+
+.ico3 {
+    position: absolute;
+    top: 1150px;
+    left: 410px;
+    width: 1300px;
+    height: 600px;
+}
+
+.ico4 {
+    position: absolute;
+    top: 1150px;
+    left: 1130px;
+    width: 1300px;
+    height: 600px;
+}
+
+.dd {
+    height: 1600px;
+    width: 1600px;
+    background: #edeae6;
+}
+
+.di {
+    height: 800px;
+    width: 400px;
+    background: white;
+    float: left;
+    display: block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+.sectwo
+{
+    height: 150px;
+    width: 640px;
+    background: rgba(8,30,46,.8);
+    margin-left: 450px;
+    margin-top: 220px;
+    border-radius: 10px;
+}
+
+.secthree
+{
+    height: 350px;
+    background: #39c;
+}
+
+.secfour
+{
+    height: 1000px;
+    background: #edeae6;
+}
+
+.bta{
+    width: 230px;
+    margin-top: 20px;
+}
+
+.btnstyle{
+    width: 270px;
+    height: 80px;
+    border-radius: 5px;
+    background-color: #39c;
+    font-size: 20px;
+    color: white;
+}
+
+.droite:hover{
+    
+}
+
+.titre{
+    color: white;
+    font-size: 20px;
+}
+
+.mamone
+{
+    width: 450px;
+    height: 760px;
+    background: white;
+    margin-left: 150px;
+    margin-top: 45px;
+    border-radius: 7px;
+    box-shadow: 1px 1px 7px 1px #cfcfcf;
+}
+
+.mamtwo
+{
+    width: 700px;
+    margin-left: 670px;
+    margin-top: 45px;
+    height: 670px;
+    background: white;
+    border-radius: 7px;
+    box-shadow: 1px 1px 7px 1px #cfcfcf;
+}
+
+.secfive
+{
+    background: white;
+    height: 900px;
+}
+
+.foo
+{
+    background: #39c;
+    height: 450px;
+}
+

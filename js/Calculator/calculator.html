@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculateur jee_ès</title>
+        <link rel="stylesheet" href="">
+        <script src="utility.js"></script>
+        <script src="">
+
+            var calculetteSimple = function calculetteSimple(){
+                var dom,add, sub, mult, div, checkValues, displayResult, checkOperator;
+                dom = {};
+                dom.op1 = byId("oper1");
+                dom.op2 = byId("oper2");
+                dom.operators = byId("operators");
+                dom.submit = byId("submit");
+
+
+                add = function add(a, b){
+                    return a + b;
+                };
+
+                sub =  function sub(a, b){
+                    return a - b;
+                };
+
+                mult = function mult(a, b){
+                    return a * b;
+                };
+                div = function div(a, b){
+                    return a / b;  
+                };
+
+                checkOperator = function checkOperator(){
+
+                    var selectedindex = dom.operators.selectedIndex;
+                    return dom.operators.children[selectedindex].val
+                }
+
+                checkValues = function checkValues(a , b){
+                    var res = false;
+                    if (a && b){
+                        if  (isFinite(a) && isFinite(b)){
+                            res = {
+                                op1: Number(a),
+                                op2: Number(b)
+                            };
+                        }
+                    }
+                    return res;
+
+                };
+
+                dom.submit.onclick = function action(){
+                    var test, operator, operations;
+                    
+                    operations = {
+                        add: add,
+                        sub: sub,
+                        mult: mult
+                        div: div
+                    }
+
+
+                    test = checkValues(dom.op1.value, dom.op2.value);
+                    
+                    if (test){
+                      operator = checkOperator();
+                        res = operations[operator](test.op1, test.op2);
+                    }
+                        
+                     if (!test || !res){
+                         display.innerHTML = "erreur de calcul :/"
+                     }
+                        alert("erreur");
+                    }
+                };
+            };
+            window.onload = function start(){
+                calculetteSimple();
+            };
+        </script>
+
+    </head>
+
+    <body>
+        <div id="calculatrice" class="calculatrice">
+            <div class="calc">
+                <input type="number" id="oper1" class="number">
+                <select id="operators" class="operators">
+                    <option value="add" class="operator">add</option>
+                    <option value="sub" class="operator">sub</option>
+                    <option value="div" class="operator">div</option>
+                    <option value="mult" class="operator">mult</option>
+                </select>
+                <input type="number" id="oper2" class="number">
+                <input type="submit" id="sumbit" class="calculate">
+            </div>        
+            <div class="res">nothing to compute yet ...</div>
+        </div>
+
+    </body>
+</html>

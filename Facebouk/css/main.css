@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background:;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    height: 46px;
+    position: fixed;
+    z-index: 1;
+    background: rgb(0, 113, 188);
+    overflow: hidden;
+}
+
+.container {
+    width: 1200px;
+    max-width: 1200px;
+    /* N'excédera pas 1200 px*/
+    min-width: 980px;
+    /* Ne sera jamais en dessous de 980px */
+    padding-left: 181px;
+    height: 100vh;
+}
+
+
+
+.position {
+    margin-right: 242px;
+    float: left;
+}
+
+.slide {
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 113, 188);
+}
+
+.animate {
+    padding-top: 195px;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    animation: hayethug 500ms linear alternate infinite;
+}
+
+.visu {
+    background: url(../images/jonathan-riley-118591.jpg) 0 0 no-repeat fixed;
+    /*0 0 remplace les paddings */
+    width: auto;
+    height: 100vh;
+    max-height: 100%;
+    max-width: 100%;
+    background-size: cover;
+    padding-top: 244px;
+}
+
+a img {
+    border: none;
+    -webkit- animation: fadeInUp infinite;
+    animation-duration: infinite;
+}
+
+h2 {
+    font-size: 63px;
+    color: white;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+hr {
+    border: 3px solid blue;
+    width: 46px;
+    margin: auto;
+}
+
+nav {
+    width: 600px;
+    height: 46px;
+    float: left;
+    flex: 1;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: block;
+    float: left;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    width: 120px
+}
+
+nav a {
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: lightgray;
+    border-bottom: 3px solid lightgray;
+    transition: 50ms;
+}
+
+.people {
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.temp{
+    background: black;
+
+}
+
+
+.eco {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 50px;
+    background: black;
+}
+
+.mission {
+    height: 390px;
+    width: 160px;
+    float: left;
+    margin: 60px 200px 0px 0px;
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+
+.mission p{
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 63px;
+    color: white;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+h3 {
+    font-size: 43px;
+    color: white;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.vu {
+    width: 1080px;
+    height: auto;
+    margin: auto;
+    background: ;
+}
+
+.visu2 {
+    background: url(../images/freddy-castro-133326.jpg) 0 0 no-repeat fixed;
+    width: auto;
+    height: 100vh;
+    max-height: 100%;
+    max-width: 100%;
+    background-size: cover;
+    padding-top:50px;
+}
+
+.people2 {
+    color: black;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.contain3 {
+    width: 1000px;
+    height: auto;
+    margin: 250px auto;
+}
+
+.conso {
+    width: 480px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    float: left;
+    overflow: auto;
+    text-align: center;
+}
+
+#space {
+    margin-right: 40px;
+    /* debut gallerie */
+}
+
+.prevu {
+    display: inline-block;
+    width: 196px;
+    height: 210px;
+    position: relative;
+    background: Darkgray;
+    transform: scale(1);
+    -ms- transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+}
+
+.prevu:hover {
+    box-shadow: 0px 0px 150px #000000;
+    background: red;
+    z-index: 2;
+    transform: scale(1.5);
+    -ms- transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+}
+
+.gallerie{
+    width:700px;
+    margin: auto;
+    background: red;
+}
+
+
+strong{
+    font-family: 'PT Sans', sans-serif;
+}
+
+.vu h3{
+    color:white;
+}
+
+@keyframes hayethug {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(200px);
+    }
+}
+#contain4{
+    background-color: lightgrey; 
+    width: 100vw;
+    height: 100vh;
+    padding-top: 100px;
+    color:white;
+
+}
+
+
+@media screen and (max-width: 1200px) {
+    *{
+        margin 0
+        padding: 0;
+    }
+    .visu1{
+        /*0 0 remplace les paddings */
+        width: auto;
+        height: 100vh;
+        max-height: 100%;
+        max-width: 100%;
+        background-size: cover;
+        padding-top: 244px;
+    }
+
+    .mission{
+        display: none;
+    }
+
+    .conso{
+        display: block;
+    }
+
+    #agence{
+        display: none;
+    }
+
+    .container{
+        background-color: black;
+
+    }
+
+
+}
+
+a img{
+    display: none;
+}
+
+nav {
+    max-width: 100vh;
+    width: auto;
+}
+
+}
+
+.form-style-9{
+    max-width: 450px;
+    background: #FAFAFA;
+    padding: 30px;
+    margin: 50px auto;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    border: 6px solid #44a9e3;
+}
+.form-style-9 ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+.form-style-9 ul li{
+    display: block;
+    margin-bottom: 10px;
+    min-height: 35px;
+}
+.form-style-9 ul li  .field-style{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 8px;
+    outline: none;
+    border: 1px solid #B0CFE0;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+
+}.form-style-9 ul li  .field-style:focus{
+    box-shadow: 0 0 5px #B0CFE0;
+    border:1px solid #B0CFE0;
+}
+.form-style-9 ul li .field-split{
+    width: 49%;
+}
+.form-style-9 ul li .field-full{
+    width: 100%;
+}
+.form-style-9 ul li input.align-left{
+    float:left;
+}
+.form-style-9 ul li input.align-right{
+    float:right;
+}
+.form-style-9 ul li textarea{
+    width: 100%;
+    height: 100px;
+}
+.form-style-9 ul li input[type="button"],
+.form-style-9 ul li input[type="submit"] {
+    -moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
+    box-shadow: inset 0px 1px 0px 0px #3985B1;
+    background-color: #216288;
+    border: 1px solid #17445E;
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    padding: 8px 18px;
+    text-decoration: none;
+    font: 12px Arial, Helvetica, sans-serif;
+}
+.form-style-9 ul li input[type="button"]:hover,
+.form-style-9 ul li input[type="submit"]:hover {
+    background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
+    background-color: #28739E;
+}

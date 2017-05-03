@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>2019</title>
+        <link rel="stylesheet" href="assets/css/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://use.fontawesome.com/2d672d9c4e.js"></script>
+        <script src="assets/js/jquery.bxslider.js"></script>
+        <!-- bxSlider CSS file -->
+        <link href="assets/css/jquery.bxslider.css" rel="stylesheet" /> </head>
+
+    <body>
+        <div class="vide">
+            <div class="cort"> <img src="assets/images/cortanagif.gif"> </div>
+            <div class="vignets">
+                <h1> Welcome , User </h1> </div>
+            <div class="tout">
+                <header> <img class="is-hidden" id="xbox" src="assets/images/xboxologe.png">
+                    <div class="header">
+                        <div class="logo">
+                            <a href="#"> <img src="assets/images/microsoft-gray.png" alt=""></a>
+                        </div>
+                        <nav>
+                            <ul>
+                                <li><a href="#">1989</a></li>
+                                <li><a href="#">1999</a></li>
+                                <li><a href="#">2009</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+            </div>
+            <!--Header + liens -->
+            <script>
+                var hasGP = false;
+
+                function canGame() {
+                    return "getGamepads" in navigator;
+                }
+                $(document).ready(function () {
+                    if (canGame()) {
+                        $(window).on("gamepadconnected", function () {
+                            hasGP = true
+                            /*$("#gamepadPrompt").html("Manette Connectée!");*/
+                            document.getElementById('xbox').classList.remove('is-hidden');
+                            console.log("connection event");
+                        });
+                        $(window).on("gamepaddisconnected", function () {
+                            console.log("disconnection event");
+                            $("#gamepadPrompt").text(prompt);
+                        });
+                        //setup an interval for Chrome
+                        var checkGP = window.setInterval(function () {
+                            if (navigator.getGamepads()[0]) {
+                                if (!hasGP) $(window).trigger("gamepadconnected");
+                                window.clearInterval(checkGP);
+                            }
+                        }, 500);
+                    }
+                });
+            </script>
+            <!--Fonctions Gamepad-->
+            <div class="slider">
+                <ul id="bxslider">
+                    <figure> <img src="assets/images/hololens.jpg" alt=""> <img src="assets/images/projectevo.jpg" alt=""> <img src="assets/images/scorpio%20final.jpg" alt=""> <img src="assets/images/surfacefinal.png" alt=""> </figure>
+                </ul>
+            </div>
+        </div>
+        <hr width="1200px;" color="white">
+        <div class="commerce"> <img src="assets/images/Storewin.jpg" alt=""> </div>
+        <div id="container">
+            
+            <div class="hideme">fadin</div>
+        </div>
+    </body>
+
+</html>

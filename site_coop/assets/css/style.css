@@ -1,0 +1,392 @@
+*{margin : 0px;
+    padding: 0px;}
+
+article{height: 150px;}
+
+header{height: 50px;}
+
+nav{position: fixed;
+    z-index: 1;}
+
+
+.large{padding: 0px;
+    margin: 0px;}
+
+.red{background: transparent }
+
+.emeraude{background: #A2BBC1}
+
+.marine{background: #463D51;}
+
+.capucine{background: #FF}
+
+.hicham{background:#FF5E4D}
+
+.toto{background: purple}
+
+.marcounais{background: orangered}
+
+.slide{ 
+    height: 600px;
+    background: url(../img/aulnaypromo1.jpg) 0 0 no-repeat fixed;
+    background-size: 100% auto;
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -ms-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    filter: grayscale(1);
+    filter: gray; /* IE 6-9 */
+    transition: 2s;
+    filter: blur()
+}
+
+.slide:hover{
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    filter: grayscale(0);
+    filter: gray; /* IE 6-9 */
+    transition: 1s;
+}
+
+
+
+h1{text-align: center;
+    color: #DBE4E3;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+    font-size: 4.3rem;
+}
+
+
+h3{text-align: center;
+    color: #463D51;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    font-size: 2.3rem;
+}
+
+h2 {text-align: center;
+    color: #463D51;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    font-size: 3.3rem;
+}
+
+p.typo{
+    margin:10px;
+    font-size:  1.4rem;                                  
+}
+
+hr{margin: 50px auto;
+    border: 3px solid orange;
+    width 30px;}
+
+
+/* general*/
+* {
+    margin: 0; 
+    padding: 0;
+}
+p {
+    line-height: 160%;
+}
+a {
+    text-decoration: none; 
+    color: #fff; 
+    transition: all 0.1s ease-in;
+}
+img {
+    border: 0;
+}
+body {
+    background: #fff;
+    color: #fff;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+}
+.clear {
+    clear: both;
+}
+/* Separateurs */
+.separator {
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.2);
+    width: 30px;
+    height: 5px;
+}
+/* 02. police */
+@font-face {
+    font-family: 'norwester';
+    src: url('../fonts/norwester/norwester.eot');
+    src: url('../fonts/norwester/norwester.eot?iefix') format('embedded-opentype'),
+        url('../fonts/norwester/norwester.ttf');
+    font-weight: normal;
+}
+/* 03. membres */
+#speakers {
+    padding: 60px 0;
+    background: #DBE4E3;
+    text-align: center;
+    color: black;
+}
+#speakers p {
+    padding: 20px 0 60px;
+    color: rgba(255,255,255, 0.85);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    color: black;
+}
+#speakers h3 {
+    padding: 0 0 15px;
+    font-family: 'norwester';
+    font-size: 36px;
+    text-transform: uppercase;
+    color: black;
+}
+#speakers h4  {
+    margin-top: -20px;
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+}
+#speakers h4 span {
+    display: block;
+    position: relative;
+    left: -40px;
+    top: 10px;
+    font-size: 20px;
+    background: none;
+    padding: 0;
+    color: black;
+}
+#speakers img {
+    width: 100%;
+    max-width: 240px;
+    border-radius: 50%; 
+    border: 15px solid transparent; 
+    box-shadow: 2px 2px 0px rgba(0,0,0, 0.18);
+    transition: all 0.1s ease-in;
+}
+#speakers img:hover {
+    border: 15px solid #A2BBC1;
+    position: relative;
+    z-index: 10;
+    transition: all 0.1s ease-in;   
+}
+#speakers span {
+    padding: 8px 20px;
+    position: relative;
+    top: -64px;
+    left: -42px;
+    display: inline-block;
+    background: #DBE4E3;
+    border-radius: 0 16px 16px 0;
+    font-size: 16px;
+    color: black;
+}
+/*  Image Hover */
+.hover_img {
+    display: none
+}
+.member-profile:hover .unhover_img{
+    display: none;
+}
+.member-profile:hover .hover_img {
+    display: block;
+}
+/* reseaux sociaux */
+#speakers li {display: inline-block; padding: 0 6px; font-size: 18px;}
+#speakers li a {color: rgba(0,0,0, 0.3); transition: all 0.1s ease-in;}
+#speakers li a:hover {color: rgba(0,0,0, 0.7);}
+/* Rows Opti */
+.row2 .row3 .row4 .row5 .row6 {
+    display: none;
+}
+.row1 .col-md-3, .row2 .col-md-3, .row3 .col-md-3, .row4 .col-md-3, .row5 .col-md-3, .row6 .col-md-3 {
+    padding-bottom: 40px;
+}
+/* Mobile Opti*/
+@media (min-width: 568px) and (max-width: 992px) {
+    .row1 .col-md-3, .row2 .col-md-3, .row3 .col-md-3, .row4 .col-md-3, .row5 .col-md-3, .row6 .col-md-3 {
+        display: inline-block;
+        max-width: 50%;
+    }
+    #speakers img {max-width: 300px;}
+}
+
+
+@media screen and (max-width:420px){
+    .slide{ 
+        height: 140px;
+        background: url(../img/aulnaypromo1.jpg) 0 0 no-repeat ;
+        background-size: 100% auto;
+        -webkit-filter: grayscale(1);
+        -moz-filter: grayscale(1);
+        -ms-filter: grayscale(1);
+        -o-filter: grayscale(1);
+        filter: grayscale(1);
+        filter: gray; /* IE 6-9 */
+        transition: 2s;
+        filter: blur()
+    }
+
+}
+
+@media screen and (min-width: 420px) and (max-width:781px){
+    .slide{ 
+        height: 300px;
+        background: url(../img/aulnaypromo1.jpg) 0 0 no-repeat ;
+        background-size: 100% auto;
+        -webkit-filter: grayscale(1);
+        -moz-filter: grayscale(1);
+        -ms-filter: grayscale(1);
+        -o-filter: grayscale(1);
+        filter: grayscale(1);
+        filter: gray; /* IE 6-9 */
+        transition: 2s;
+        filter: blur()
+    }
+}
+
+@media screen and (min-width: 781px) and (max-width:1024px){
+    .slide{ 
+        height: 300px;
+        background: url(../img/aulnaypromo1.jpg) 0 0 no-repeat ;
+        background-size: 100% auto;
+        -webkit-filter: grayscale(1);
+        -moz-filter: grayscale(1);
+        -ms-filter: grayscale(1);
+        -o-filter: grayscale(1);
+        filter: grayscale(1);
+        filter: gray; /* IE 6-9 */
+        transition: 2s;
+        filter: blur()
+    }
+}
+
+@media screen and (min-width: 1025px){
+    .slide{ 
+        height: 500px;
+        background: url(../img/aulnaypromo1.jpg) 0 0 no-repeat ;
+        background-size: 100% auto;
+        -webkit-filter: grayscale(1);
+        -moz-filter: grayscale(1);
+        -ms-filter: grayscale(1);
+        -o-filter: grayscale(1);
+        filter: grayscale(1);
+        filter: gray; /* IE 6-9 */
+        transition: 2s;
+        filter: blur()
+    }
+
+}
+
+.btn-primary {
+    background-color: #E7A331;
+    color: #ffffff;
+    border: 2px solid #E7A331;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+.btn-primary:hover {
+    background-color: #d6962c;
+    border-color: #d6962c;
+    color: #fff;
+}
+
+.portfolio{
+    background:url(assets/images/portfoliobg.jpg) center top no-repeat;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;	
+}
+
+.portfolio_content{
+    padding-bottom:120px;
+    display:inline-block;
+}
+.portfolio .portfolio_content .head_title h3{
+    color:#000000;
+}
+.portfolio .portfolio_content .head_title h4{
+    color:#000000;
+}
+
+.single_portfolio_text{
+    display:inline-block;
+    padding:0;
+    position:relative;
+    overflow:hidden;
+
+}
+.single_portfolio_text img{
+    width:100%;
+}
+
+.single_portfolio_text:hover .portfolio_images_overlay{
+    top:5%;
+    left: 5%;
+}
+
+.portfolio_images_overlay{
+    width: 90%;
+    height: 90%;
+    background: rgba(0, 0, 0, .5);
+    padding: 20px;
+    margin: 0 auto;
+    top:-100%;
+    left: 5%;
+    position: absolute;
+    transition:.6s;
+}
+.portfolio_images_overlay h6{
+    text-transform:uppercase;
+    color:#fff;
+    font-size:2rem;
+    line-height:2.575rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.portfolio_images_overlay p.product_price{
+    font-size:2.5725rem;
+    color:#fff;
+    line-height:3rem;
+}
+.portfolio_images_overlay .btn{
+    margin-top: 25px;
+}
+
+@media (min-width:769px) and (max-width:991px) {
+    .portfolio_images_overlay {
+        padding: 0px;
+    }
+}
+@media (max-width:768px) {
+    .portfolio_images_overlay{
+        padding: 170px 20px;
+    }
+}
+@media (max-width:580px) {
+    .portfolio_images_overlay{
+        padding: 100px 20px;
+    }
+}
+@media (max-width:480px) {
+    .portfolio_images_overlay{
+        padding: 40px 20px;
+    }
+}
+@media (max-width:320px) {
+    .portfolio_images_overlay{
+        padding: 20px;
+    }
+}

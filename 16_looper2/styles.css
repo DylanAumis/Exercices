@@ -1,0 +1,29 @@
+img
+{
+  height: 500px;
+  width: 500px;
+}
+
+#carte_id
+{
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  display: block;
+}
+
+.carte
+{
+  width: 125px;
+  height: 200px;
+  border: 1px solid black;
+  display: block;  transition: all 1s;
+}
+
+.carte.is-active
+{
+  width: 500px;
+  height: 700px;
+  border: 1px solid gray;
+
+}

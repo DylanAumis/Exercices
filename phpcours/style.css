@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: arial;
+    padding: 20px;
+}
+
+ul{
+    padding-left: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.text{
+    margin-bottom: 20px;
+}
+
+.title{
+    font-size: 1.3rem;
+    margin: 20px 0;
+}
+
+.title:first-of-type{
+    margin-top:0;
+}
+
+.input{
+    display: block;
+    margin-bottom: 10px;
+    width: 280px;
+    height: 32px;
+    padding: 3px 0 3px 20px;
+    border-radius: .3rem;
+    border: 1px solid silver;
+}
+
+.list.lieux
+{
+    padding: 0 20px;
+    border: 1px solid silver;
+}
+
+.list.lieux .item {
+    list-style: none;
+    border-bottom: 1px solid silver;
+    padding: 5px 0;
+}
+
+.list.lieux span,
+.list.lieux a
+{
+    margin-right: 10px;
+}
+
+.list.lieux a:hover{
+    color: orange;
+}
+
+

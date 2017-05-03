@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(14, 14, 14);
+    overflow-x: hidden;
+}
+
+.vide {
+    width: 100vw;
+    height: 50vh;
+    min-width: 500px;
+    max-width: 500px;
+    position: relative;
+    top: 230px;
+    left: 580px;
+}
+
+.cort {
+    opacity: 0;
+    animation: 7s hide 1;
+}
+
+#gamepadPrompt {
+    margin-left: 600px;
+}
+
+.vignets {
+    font-size: 14px;
+    width: 500px;
+    left: 75px;
+    top: -50px;
+    position: relative;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    animation: fadein 7s;
+    -moz-animation: fadein 7s;
+    /* Firefox */
+    -webkit-animation: fadein 7s;
+    /* Safari et Chrome */
+    -o-animation: fadein 7s;
+    /* Opera */
+}
+
+.is-hidden {
+    display: none;
+}
+
+h1 {
+    opacity: 0;
+    animation: 5s hide 1;
+    color: rgb(74, 184, 252);
+    display: flex;
+    text-align: center;
+    left: 190px;
+}
+
+
+/*-- DEBUT Header-*/
+
+header {
+    width: 100vw;
+    height: auto;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    -webkit-animation: fadeinright 1.5s;
+    -o-animation: fadeinright 1.5s;
+    -moz-animation: fadeinright 1.5;
+    animation-duration: 8.5s;
+    animation-delay: ;
+    -webkit-animation-timing-function: cubic-bezier(1, -7.89, .66, 1.2);
+}
+
+header button {
+    position: absolute;
+    left: 0px;
+    float: left;
+}
+
+div.header {
+    width: 1000px;
+    height: 42px;
+    margin: auto;
+    display: flex;
+}
+
+.logo {
+    width: 300px;
+    height: 50px;
+    position: relative;
+    margin-top: 0px;
+}
+
+nav {
+    width: 800px;
+    height: 46px;
+    float: left;
+    left: 50px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: block;
+    height: 46px;
+    line-height: 46px;
+    width: 160px;
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+nav img {
+    left: 25px;
+}
+
+nav ul li a {
+    display: block;
+    background: transparent;
+    color: white;
+    padding: auto;
+    top: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 1s;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+nav ul li a:hover {
+    display: block;
+    background: #272727;
+    color: rgb(74, 184, 252);
+}
+
+
+/* FIN header */
+
+.slider {
+    overflow: hidden;
+    height: 600px;
+    width: 1000px;
+    border: solid 1px #555;
+    padding: 0;
+    position: relative;
+    margin: 150px auto;
+    background-attachment: fixed;
+    left: -350px;
+    top: -570px;
+    -webkit-animation: fadeinright 1.5s;
+    -o-animation: fadeinright 1.5s;
+    -moz-animation: fadeinright 1.5;
+    animation-duration: 8.5s;
+    animation-delay: ;
+    -webkit-animation-timing-function: cubic-bezier(1, -7.89, .66, 1.2)
+}
+
+#xbox {
+    margin-left: 1300px;
+    margin-top: 10px;
+    -webkit-animation: fadein 2s;
+    animation-duration: 2s;
+    float: left;
+}
+
+.glyphicon-home {
+    color: white;
+    font-size: 1.5em;
+    margin-top: 5px;
+    margin: 0 auto;
+}
+
+hr {
+    margin-top: 450px;
+    margin-left: 150px;
+}
+
+.commerce {
+    margin-left: 250px;
+    margin-top: 100px;
+    -webkit-animation: fadeinright 1.5s;
+    -o-animation: fadeinright 1.5s;
+    -moz-animation: fadeinright 1.5;
+    animation-duration: 8.5s;
+    animation-delay: ;
+    -webkit-animation-timing-function: cubic-bezier(1, -7.89, .66, 1.2)
+}
+
+
+/* ANIMATIONS */
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fadein {
+    /* sur Firefox */
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadein {
+    /* sur Safari et Chrome */
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes fadein {
+    /* sur Opera */
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes hide {
+    0,
+    1% {
+        opacity: 0
+    }
+    20% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0.8;
+    }
+    70% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeinright {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+    25% {
+        opacity: 0;
+        ;
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}

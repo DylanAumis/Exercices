@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: snow;
+}
+.noyau{
+    animation: simplon 5s linear 5s infinite;
+    transform-style: preserve-3d;
+    
+}
+
+
+@keyframes simplon{
+    from{
+        transform: rotateY(0);
+    }
+    to{
+        transform-origin: 50% 100%; transform:  rotateY(360deg);
+
+    }
+}
+
+
+.slide{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    margin-left: -200px;
+    margin-top: -200px;
+    perspective: 800px;
+    perspective-origin: 50% 100%;
+}
+
+.cote{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.tri{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 175px 300px 175px;
+    border-color: transparent transparent rgb(68, 0, 255) transparent;
+}
+
+.tri:nth-child(2){ background: rgba(68, 0, 255, 0.2)}
+.tri:nth-child(3){ background: rgba(6, 0, 255, 0.8)}
+.tri:nth-child(4){ background: rgba(0, 255, 235, 0.8)}
+.tri:nth-child(5){ background: rgba(255, 167, 0, .3)}
+
+
+#face1{transform: rotateY(-90deg) translateX(350px);
+    transform-origin: right center}
